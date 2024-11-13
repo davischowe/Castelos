@@ -1,36 +1,74 @@
+/* Estilo geral (mobile-first) */
 
-  
-  /* Media query para telas com largura máxima de 768px (como tablets e dispositivos móveis) */
-  @media (max-width: 768px) {
-    body {
-        font-family: Arial, sans-serif;
-        background-color:gray; 
-        color: #ffffff; 
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
+/* Para dispositivos móveis com largura máxima de 600px */
+@media (max-width: 600px) {
+    /* Ajustar o menu de navegação para empilhar os itens */
+    .nav-list {
+        flex-direction: column; 
+        gap: 10px; /* Espaço entre os itens */
     }
-  }
-  
-  /* Media query para telas com largura máxima de 480px (como smartphones em modo retrato) */
-  @media (max-width: 480px) {
-    body {
-        font-family: Arial, sans-serif;
-        background-color:gray; 
-        color: #ffffff; 
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
+
+    /* Ajustar o tamanho do texto e espaçamentos */
+    #texts h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
     }
-    nav{
-        display: flex;
-    justify-content:space-around;
-    align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
-    height: 8vh;
+
+    #texts p {
+        font-size: 0.9em;
+        padding: 10px;
     }
-  }
-  
+
+    .logo {
+        font-size: 1.2em; /* Reduz o tamanho da logo */
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer img {
+        width: 24px; /* Reduz tamanho dos ícones */
+        margin: 5px;
+    }
+}
+
+/* Para tablets com largura mínima de 601px e máxima de 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-list {
+        gap: 20px;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
+    }
+
+    #texts p {
+        font-size: 1.1em;
+    }
+
+    footer img {
+        width: 32px;
+    }
+}
+
+/* Para desktops com largura mínima de 1025px */
+@media (min-width: 1025px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .titulo h1 {
+        font-size: 3em;
+    }
+
+    #texts p {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+    footer img {
+        width: 40px;
+    }
+}

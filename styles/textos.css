@@ -1,0 +1,47 @@
+#texts{
+    padding-left: 10px;
+    text-align: center;
+    background-color: #5e5d5d;
+    border-radius: 25px;
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#imgs img{
+    width: 500px;
+    border-radius: 20px;
+    border: solid, black;
+    align-items: center;
+}
+#pe{
+    font-family:  'Roboto', sans-serif;
+    font-weight: bold;
+}
+#pe p{
+    color:pink
+}
+#texts strong{
+    color: pink;
+}
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: pink;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0;           /* Remove o espaçamento interno */
+    margin: 0;            /* Remove o espaçamento externo */
+    display: inline;      /* Define como inline para o fundo ficar apenas atrás do texto */
+}
+#texts h1{
+    color:pink;
+    font-family:'Roboto', sans-serif ;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+    
+
+
+
