@@ -34,11 +34,50 @@
     margin: 0;            /* Remove o espaçamento externo */
     display: inline;      /* Define como inline para o fundo ficar apenas atrás do texto */
 }
-#texts h1{
+#local{
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+}
+#local h1{
     color:pink;
     font-family:'Roboto', sans-serif ;
     font-style: italic;
     text-decoration: underline;
+}
+#local img{
+    border-radius: 20px;
+    padding-inline-end: 10px;
+    padding-left: 10px;
+}
+#texts2{
+    background-color: #5e5d5d;
+    border-radius: 10px;
+}
+
+hr{
+    border: 2px solid rgb(122, 19, 117);
+    width: 1850px;
+    margin: 6px;
+    
+}
+#texts2 h1{
+    padding-left: 10px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: pink;
+}
+#texts2 h2{
+    padding-left: 10px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.espaco{
+    padding-top: 65px;
 }
 
     
