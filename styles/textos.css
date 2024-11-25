@@ -5,7 +5,16 @@
     border-radius: 25px;
     font-size: 20px;
     color: rgb(233, 233, 233);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px auto; 
+    max-width: 90%; 
+    border: solid;
+    border-color: pink;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+#texts:hover{
+    transform: translateY(-5px); 
+    box-shadow: 6px 6px 12px pink; 
 }
 #imgs img{
     width: 500px;
@@ -13,13 +22,7 @@
     border: solid, black;
     align-items: center;
 }
-#pe{
-    font-family:  'Roboto', sans-serif;
-    font-weight: bold;
-}
-#pe p{
-    color:pink
-}
+
 #texts strong{
     color: pink;
 }
@@ -30,15 +33,21 @@
     color: pink;
     background-color: black;
     border-radius: 20px;
-    padding: 0;           /* Remove o espaçamento interno */
-    margin: 0;            /* Remove o espaçamento externo */
-    display: inline;      /* Define como inline para o fundo ficar apenas atrás do texto */
+    padding: 0;           
+    margin: 0;            
+    display: inline;      
 }
 #local{
     text-align: center;
-    background-color: black;
-    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 20px auto; 
+    border: solid, pink;
 }
+#local:hover{
+    transform: translateY(-5px); 
+    box-shadow: 6px 6px 12px pink; 
+}
+
 #local h1{
     color:pink;
     font-family:'Roboto', sans-serif ;
@@ -50,37 +59,100 @@
     padding-inline-end: 10px;
     padding-left: 10px;
 }
-#texts2{
+.texts2{
     background-color: #5e5d5d;
     border-radius: 10px;
+    margin: 20px auto; 
+    max-width: 90%; 
 }
 
 hr{
-    border: 2px solid rgb(122, 19, 117);
+    border: 2px solid, pink;
     width: 1850px;
     margin: 6px;
+    margin: 20px auto; 
+    max-width: 90%;
     
 }
-#texts2 h1{
+.texts2 h1{
     padding-left: 10px;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     color: pink;
+    text-align: center;
 }
-#texts2 h2{
+.texts2 h2{
     padding-left: 10px;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    color: white;
+    font-size: 18px;
+    color: rgb(205, 75, 209);
 }
 
 .espaco{
     padding-top: 65px;
 }
 
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 20px auto; 
+    max-width: 90%;
+}
+.container:hover{
+    transform: translateY(-5px); 
+    box-shadow: 6px 6px 12px pink; 
+}
+
+.box {
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    max-width: 700px; 
+    word-wrap: break-word; 
+    line-height: 1.8;
+}
+.box strong{
+    color: pink;
+    text-decoration: underline;
+}
+.box2{
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.box2 strong{
+    color: pink;
+    text-decoration: underline; 
+}
+.box2 b{
+    color: pink;
+}
+.box b{
+    color: pink;
+}
+.box img{
+    max-width: 200px;
+    border: solid, pink;
+    box-shadow: 0 4px 6px, pink ;
+    border-radius: 5px;
+}
+#prova hr{
+    border: 2px solid, pink;
+    width: 1850px;
+    margin: 6px;
+    margin: 20px auto; 
+    max-width: 90%;
     
-
-
+}
 

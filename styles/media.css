@@ -1,74 +1,62 @@
-/* Estilo geral (mobile-first) */
-
-/* Para dispositivos móveis com largura máxima de 600px */
-@media (max-width: 600px) {
-    /* Ajustar o menu de navegação para empilhar os itens */
+@media screen and (max-width: 768px) {
+    /* Ajuste do menu de navegação */
     .nav-list {
-        flex-direction: column; 
-        gap: 10px; /* Espaço entre os itens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
-    /* Ajustar o tamanho do texto e espaçamentos */
-    #texts h1 {
-        font-size: 1.5em; /* Reduz o tamanho do título */
-    }
-
-    #texts p {
-        font-size: 0.9em;
-        padding: 10px;
+    .nav-list li {
+        margin: 10px 0;
     }
 
     .logo {
-        font-size: 1.2em; /* Reduz o tamanho da logo */
+        font-size: 1.5rem;
     }
 
-    footer {
+    /* Estilo para as caixas de conteúdo */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, .box2 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Ajuste das imagens */
+    .imagens img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+/* Estilo para telas menores que 480px (smartphones pequenos) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
         text-align: center;
     }
 
     footer img {
-        width: 24px; /* Reduz tamanho dos ícones */
-        margin: 5px;
-    }
-}
-
-/* Para tablets com largura mínima de 601px e máxima de 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .nav-list {
-        gap: 20px;
-    }
-
-    .titulo h1 {
-        font-size: 2.5em;
-    }
-
-    #texts p {
-        font-size: 1.1em;
-    }
-
-    footer img {
-        width: 32px;
-    }
-}
-
-/* Para desktops com largura mínima de 1025px */
-@media (min-width: 1025px) {
-    .nav-list {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
-    .titulo h1 {
-        font-size: 3em;
-    }
-
-    #texts p {
-        font-size: 1.2em;
-        padding: 20px;
-    }
-
-    footer img {
-        width: 40px;
+        width: 24px;
+        height: 24px;
     }
 }
